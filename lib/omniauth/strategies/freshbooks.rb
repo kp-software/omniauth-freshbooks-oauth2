@@ -3,7 +3,7 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class Freshbooks < OmniAuth::Strategies::OAuth2
-      option :name, 'freshbooks'
+      option :name, :freshbooks
 
       option :client_options, {
         site: 'https://api.freshbooks.com',
