@@ -25,9 +25,5 @@ describe OmniAuth::Strategies::Freshbooks do
     it 'should have correct access token url' do
       expect(subject.options.client_options.token_url).to eq('https://api.freshbooks.com/auth/oauth/token')
     end
-
-    it 'should have correct token phase request headers' do
-      expect(subject.options.token_params.headers).to eq({ 'Api-Version' => 'alpha' })
-    end
   end
 end
